@@ -13,7 +13,7 @@ transformer = Transformer()
 
 def read(name: str):
     name = pathlib.Path(__name__).parent / 'templates' / name
-    with open(name, 'r') as file:
+    with open(str(name), 'r') as file:
         contents = file.readlines()
     return contents
 
