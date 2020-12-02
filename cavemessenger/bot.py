@@ -1,9 +1,10 @@
 import random
 import botogram
 import pathlib
+import os
 
 from cavemessenger.transforms import Transformer
-from cavemessenger.secret import API_KEY
+API_KEY = os.environ.get('API_KEY]', '')
 
 
 bot = botogram.create(API_KEY)
