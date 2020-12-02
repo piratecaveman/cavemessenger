@@ -4,7 +4,7 @@ import pathlib
 import os
 
 from cavemessenger.transforms import Transformer
-API_KEY = os.environ.get('API_KEY]', '')
+API_KEY = os.environ['API_KEY']
 
 
 bot = botogram.create(API_KEY)
