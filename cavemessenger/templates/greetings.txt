@@ -1,0 +1,21 @@
+Hello <name>
+Greetings <name>
+Namaste <name>
+Bonjour <name>
+Hola <name>
+Nǐn hǎo <name>
+Zdravstvuyte <name>
+Salve <name>
+Konnichiwa <name>
+Guten Tag <name>
+Olá <name>
+Anyoung haseyo <name>
+Asalaam alaikum <name>
+Goddag <name>
+Shikamoo <name>
+Goedendag <name>
+Yassas <name>
+Dzień dobry <name>
+Selamat siang <name>
+Merhaba <name>
+Shalom <name>

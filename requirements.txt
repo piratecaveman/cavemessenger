@@ -1,0 +1,7 @@
+botogram-beta
+certifi
+chardet
+idna
+Logbook
+requests
+urllib3
