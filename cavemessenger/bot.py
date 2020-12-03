@@ -138,7 +138,7 @@ def source(chat: botogram.Chat, message: botogram.Message):
     text = (f"You can have a look at my source code here if you'd like:\n"
             f"{url}")
     chat.send(text, reply_to=message.id)
-z
+
 
 if __name__ == '__main__':
     bot.run()
