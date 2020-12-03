@@ -44,6 +44,7 @@ def get_names(message: botogram.Message) -> dict:
 
 @bot.command('hello')
 def hello(chat: botogram.Chat, message: botogram.Message):
+    """Greetings in 21 languages"""
     greetings = read('greetings.txt')
     names = get_names(message)
 
@@ -66,6 +67,7 @@ def hello(chat: botogram.Chat, message: botogram.Message):
 
 @bot.command('insult')
 def insult(chat: botogram.Chat, message: botogram.Message, args: list):
+    """Don't be too harsh"""
     names = get_names(message)
     insults = read('insults.txt')
     number = random.randint(0, len(insults) - 1)
@@ -102,6 +104,7 @@ def insult(chat: botogram.Chat, message: botogram.Message, args: list):
 
 @bot.command('germanize')
 def germanize(chat: botogram.Chat, message: botogram.Message, args: list):
+    """Germanize text"""
 
     refusals = read('refuse.txt')
     number = random.randint(0, len(refusals) - 1)
@@ -126,6 +129,15 @@ def germanize(chat: botogram.Chat, message: botogram.Message, args: list):
             chat.send(refuse, reply_to=message.id)
     else:
         chat.send(f'You truly are too dumb to use a command properly', reply_to=message.id)
+
+
+@bot.command('souce')
+def source(chat: botogram.Chat, message: botogram.Message):
+    """Have a look at my source code"""
+    url = 'https://github.com/piratecaveman/cavemessenger'
+    text = (f"You can have a look at my source code here if you'd like:"
+            f"{url}")
+    chat.send(text, reply_to=message.id)
 
 
 if __name__ == '__main__':
