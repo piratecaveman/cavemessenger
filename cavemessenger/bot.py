@@ -131,14 +131,14 @@ def germanize(chat: botogram.Chat, message: botogram.Message, args: list):
         chat.send(f'You truly are too dumb to use a command properly', reply_to=message.id)
 
 
-@bot.command('souce')
+@bot.command('source')
 def source(chat: botogram.Chat, message: botogram.Message):
-    """Have a look at my source code"""
+    """Have a look at the source code"""
     url = 'https://github.com/piratecaveman/cavemessenger'
     text = (f"You can have a look at my source code here if you'd like:"
             f"{url}")
     chat.send(text, reply_to=message.id)
-
+z
 
 if __name__ == '__main__':
     bot.run()
